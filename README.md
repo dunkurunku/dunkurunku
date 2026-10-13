@@ -34,6 +34,12 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 - Auditoría de seguridad: endpoints sin autenticación, verificación de firma del webhook de Stripe, credenciales fuera del código, registro de tráfico HTTP eliminado en compilaciones de distribución.
 - Sitio web en React, Vite y Tailwind, y despliegues en el servidor de producción.
 
+## Museo interactivo con Leap Motion · código abierto
+
+Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Trabajo en grupo de Nuevos Paradigmas de Interacción (UGR); mi parte fue el tótem de procesamiento (horno y yunque), el de exposición con el armor stand y todos los modelos 3D.
+
+[Código y vídeo](https://github.com/dunkurunku/museo-minecraft)
+
 ## Compilador con Flex y Bison · código abierto
 
 Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáctico LALR(1), semántico con tabla de símbolos y ámbitos, cuádruplos y generación de C. Con pruebas automáticas y GitHub Actions. Proyecto individual de Procesadores de Lenguajes (UGR).
