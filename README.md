@@ -34,7 +34,9 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 
 ## WhatsPericial
 
-**Certificación de conversaciones de WhatsApp como prueba pericial.** Adquisición asistida de la conversación, integridad de la evidencia y generación del informe pericial.
+**Certificación de conversaciones de WhatsApp como prueba pericial.** Adquisición asistida de la conversación, integridad de la evidencia y generación del informe pericial. Publicada en iOS y Android.
+
+[App Store](https://apps.apple.com/es/app/whatspericialapp/id6772326675) · [Google Play](https://play.google.com/store/apps/details?id=com.whatspericial.app)
 
 **Mi trabajo**
 - Port completo de la app iOS a Android (49 ficheros Kotlin), incluida la sesión asistida con LiveKit y Play Integrity.
