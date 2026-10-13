@@ -2,7 +2,7 @@
 
 Desarrollador de software · iOS, Android y backend · Granada
 
-Estudiante de último curso de Ingeniería Informática (Universidad de Granada, mención en Computación y Sistemas Inteligentes). Desde marzo de 2026 desarrollo en [GeoNotary](https://geonotary.com), una empresa de peritaje informático y certificación de evidencia digital, donde llevo las apps móviles, el backend y el servidor de producción.
+Ingeniero informático por la Universidad de Granada (2022 – 2026, mención en Computación y Sistemas Inteligentes). Desde marzo de 2026 desarrollo en [GeoNotary](https://geonotary.com), una empresa de peritaje informático y certificación de evidencia digital, donde llevo las apps móviles, el backend y el servidor de producción.
 
 El código de estos proyectos es propiedad de la empresa y está en repositorios privados. Aquí resumo qué hace cada producto y qué he hecho yo en él.
 
@@ -65,7 +65,7 @@ Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáct
 
 ## Formación
 
-**Grado en Ingeniería Informática** · Universidad de Granada · 2022 – 2027 (previsto)
+**Grado en Ingeniería Informática** · Universidad de Granada · 2022 – 2026
 Mención en Computación y Sistemas Inteligentes. Prácticas de empresa (12 ECTS) en GeoNotary S.L.
 
 Español nativo · Inglés B2
