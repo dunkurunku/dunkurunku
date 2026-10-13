@@ -22,16 +22,6 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 - En la app iOS (Swift, SwiftUI, Core Data, Core Location): corrección de la pérdida de días completos de registro y de los cierres del sistema por memoria en segundo plano, procesando el histórico por ventanas acotadas.
 - Corrección de una fuga de datos entre entrenamiento y validación en el modelo de identidad, que daba métricas optimistas.
 
-## TeslAI
-
-**App iOS que preacondiciona el climatizador de un Tesla al detectar que el usuario se acerca al coche.** Motor de decisión multiseñal con umbral adaptativo sobre distancia, velocidad de aproximación y tiempo estimado de llegada.
-
-**Mi trabajo**
-- El producto llevaba meses sin activar el climatizador y se asumía que fallaba el algoritmo. Analicé en Python más de 1.100 sesiones reales de producción y demostré que el 90 % de los fallos venía de que iOS no llegaba a ejecutar la app a tiempo en segundo plano.
-- Encontré además un defecto en el cálculo de la velocidad que invertía el comportamiento del umbral y una regresión de permisos de localización que degradó el sistema tres semanas sin aparecer en ningún informe de error.
-- Rediseñé la planificación de despertares para no agotar el presupuesto de ejecución de iOS y aproveché las activaciones de pantalla como muestreo extra. Primera activación real registrada el 18 de agosto de 2026; el climatizador funcionó en campo por primera vez.
-- Tres informes técnicos de diagnóstico para dirección.
-
 ## WhatsPericial
 
 **Certificación de conversaciones de WhatsApp como prueba pericial.** Adquisición asistida de la conversación, integridad de la evidencia y generación del informe pericial. Publicada en iOS y Android.
