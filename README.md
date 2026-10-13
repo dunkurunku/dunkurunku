@@ -46,7 +46,7 @@ Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáct
 
 | | |
 |---|---|
-| **Lenguajes** | Swift, Kotlin, C++, C, Java, C#, Python, PHP, JavaScript, SQL, Bash, ensamblador x86, R, Prolog, CLIPS |
+| **Lenguajes** | Swift, Kotlin, C++, C, Java, C#, Python, PHP, JavaScript, SQL, Bash, R, Prolog, CLIPS |
 | **iOS** | SwiftUI, Core Data, Core Location, Core Motion, tareas en segundo plano, App Attest, Xcode, App Store Connect, TestFlight |
 | **Android** | Jetpack Compose, Room, Retrofit, Play Integrity, Play Billing, Android Studio, Google Play Console |
 | **Backend** | PHP, Node.js, MySQL, APIs REST, Socket.IO, LiveKit, Stripe y webhooks, Firebase (Analytics, Crashlytics, FCM) |
