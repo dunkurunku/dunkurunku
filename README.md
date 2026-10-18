@@ -22,7 +22,7 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 - En la app iOS (Swift, SwiftUI, Core Data, Core Location): corrección de la pérdida de días completos de registro y de los cierres del sistema por memoria en segundo plano, procesando el histórico por ventanas acotadas.
 - Corrección de una fuga de datos entre entrenamiento y validación en el modelo de identidad, que daba métricas optimistas.
 
-## WhatsPericial
+## WhatsPericialApp
 
 **Certificación de conversaciones de WhatsApp como prueba pericial.** Adquisición asistida de la conversación, integridad de la evidencia y generación del informe pericial. Publicada en iOS y Android.
 
