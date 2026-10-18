@@ -42,7 +42,7 @@ Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: 
 
 ## Predicción de biomasa desde una foto · Kaggle · código abierto
 
-Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a partir de una única imagen cenital, separando la materia viva de la muerta, con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias (DINOv2 con cabezas de regresión, destilación con información privilegiada, ensemble ConvNeXt + EfficientNet y descriptores clásicos) y escribimos la memoria como un artículo científico. Hallazgo clave: validar por fechas destapa una fuga de datos que inflaba el R² de 0,75 a 0,81. Proyecto en grupo de la asignatura Visión por Computador (UGR).
+Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a partir de una única imagen cenital, separando la materia viva de la muerta, con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias (DINOv2 con cabezas de regresión, destilación con información privilegiada, ensemble ConvNeXt + EfficientNet y descriptores clásicos) y escribimos la memoria como un artículo científico. Hallazgo clave: validar por fechas destapa una fuga de datos que inflaba el R² de 0,75 a 0,81. Proyecto en grupo para la competición, pensado para poner a prueba nuestros conocimientos y habilidades de Deep Learning sobre un problema real.
 
 [Código y memoria](https://github.com/dunkurunku/image2biomass-kaggle)
 
