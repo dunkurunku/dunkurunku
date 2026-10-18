@@ -36,13 +36,13 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 
 ## Museo interactivo con Leap Motion · código abierto
 
-Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Trabajo en grupo de Nuevos Paradigmas de Interacción (UGR); mi parte fue el tótem de procesamiento (horno y yunque), el de exposición con el armor stand y todos los modelos 3D.
+Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Proyecto de la asignatura Nuevos Paradigmas de Interacción (UGR).
 
 [Código y vídeo](https://github.com/dunkurunku/museo-minecraft)
 
 ## Predicción de biomasa desde una foto · Kaggle · código abierto
 
-Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a partir de una única imagen cenital con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias (DINOv2 con cabezas de regresión, destilación con información privilegiada, ensemble ConvNeXt + EfficientNet y descriptores clásicos) y escribimos la memoria como un artículo científico. Hallazgo clave: validar por fechas destapa una fuga de datos que inflaba el R² de 0,75 a 0,81. Trabajo en grupo de Visión por Computador (UGR).
+Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a partir de una única imagen cenital con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias (DINOv2 con cabezas de regresión, destilación con información privilegiada, ensemble ConvNeXt + EfficientNet y descriptores clásicos) y escribimos la memoria como un artículo científico. Hallazgo clave: validar por fechas destapa una fuga de datos que inflaba el R² de 0,75 a 0,81. Proyecto de la asignatura Visión por Computador (UGR).
 
 [Código y memoria](https://github.com/dunkurunku/image2biomass-kaggle)
 
