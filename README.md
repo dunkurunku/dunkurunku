@@ -70,6 +70,6 @@ Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáct
 ## Formación
 
 **Grado en Ingeniería Informática** · Universidad de Granada · 2022 – 2026
-Mención en Computación y Sistemas Inteligentes. Prácticas de empresa (12 ECTS) en GeoNotary S.L.
+Mención en Computación y Sistemas Inteligentes. Prácticas de empresa en GeoNotary S.L.
 
 Español nativo · Inglés B2
