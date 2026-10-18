@@ -36,7 +36,7 @@ El código de estos proyectos es propiedad de la empresa y está en repositorios
 
 ## Museo interactivo con Leap Motion · código abierto
 
-Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Proyecto de la asignatura Nuevos Paradigmas de Interacción (UGR).
+Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Proyecto de interacción natural con sensores de gestos.
 
 [Código y vídeo](https://github.com/dunkurunku/museo-minecraft)
 
@@ -48,7 +48,7 @@ Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a
 
 ## Compilador con Flex y Bison · código abierto
 
-Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáctico LALR(1), semántico con tabla de símbolos y ámbitos, cuádruplos y generación de C. Con pruebas automáticas y GitHub Actions. Proyecto individual de Procesadores de Lenguajes (UGR).
+Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáctico LALR(1), semántico con tabla de símbolos y ámbitos, cuádruplos y generación de C. Con pruebas automáticas y GitHub Actions. Proyecto individual.
 
 [Código](https://github.com/dunkurunku/compilador-flex-bison)
 
