@@ -1,75 +1,82 @@
 # Cristian Ramón Noguera
 
-Desarrollador de software · iOS, Android y backend · Granada
+Software, AI & Mobile Developer · iOS, Android, backend and AI · Granada, Spain
 
-Ingeniero informático por la Universidad de Granada (2022 – 2026, mención en Computación y Sistemas Inteligentes). Desde enero de 2026 desarrollo en [GeoNotary](https://geonotary.com), una empresa de peritaje informático y certificación de evidencia digital, donde llevo las apps móviles, el backend y el servidor de producción.
+Computer Engineer from the University of Granada (2022 – 2026, specialisation in Computing and Intelligent Systems). Since December 2025 I've been working at [GeoNotary](https://geonotary.com), a digital forensics and evidence certification company, where I work on the mobile apps, the backend, the production server and AI features trained on real data.
 
-El código de estos proyectos es propiedad de la empresa y está en repositorios privados. Aquí resumo qué hace cada producto y qué he hecho yo en él.
+The code of the company products lives in private repositories, so below I summarise what each product does and which parts I built. The rest are public repositories.
 
-[Portfolio web](https://dunkurunku.github.io) · [Currículum en PDF](https://dunkurunku.github.io/assets/Curriculum-Cristian-Ramon-Noguera.pdf) · xxcristianxx2004@gmail.com
+[Portfolio](https://dunkurunku.github.io) · [Resume (PDF)](https://dunkurunku.github.io/assets/Resume-Cristian-Ramon-Noguera.pdf) · [LinkedIn](https://www.linkedin.com/in/cristian-ramon-noguera) · crisrn04@icloud.com
 
 ---
 
 ## GeoNotary
 
-**Certifica la ubicación del usuario con validez judicial.** Registra la posición con sellado temporal y resumen criptográfico, y construye un modelo de identidad a partir de los patrones de movimiento para acreditar que el registro es del propio usuario. Se usa en defensa legal y en acreditación de residencia fiscal.
+**Certifies the user's location with legal validity.** It records the position with a timestamp and a cryptographic digest, and builds an identity model from movement patterns to show that the record belongs to the user. Used in legal defence and to prove tax residency.
 
 [App Store](https://apps.apple.com/es/app/geonotary/id6742685214) · [Google Play](https://play.google.com/store/apps/details?id=com.geonotary.app)
 
-**Mi trabajo**
-- Cliente Android desde cero hasta su publicación en Google Play: Kotlin, Jetpack Compose, Room y Retrofit, con paridad funcional con la app iOS (login federado, sincronización, suscripciones, informe de fallos, internacionalización).
-- Rechazo de ubicaciones simuladas y verificación de integridad de la instalación con Play Integrity.
-- En la app iOS (Swift, SwiftUI, Core Data, Core Location): corrección de la pérdida de días completos de registro y de los cierres del sistema por memoria en segundo plano, procesando el histórico por ventanas acotadas.
-- Corrección de una fuga de datos entre entrenamiento y validación en el modelo de identidad, que daba métricas optimistas.
+**What I did**
+- Android client from scratch through to its release on Google Play: Kotlin, Jetpack Compose, Room and Retrofit, with feature parity with the iOS app (federated login, sync, subscriptions, crash reporting, localisation).
+- Rejection of mocked locations and install integrity checks with Play Integrity.
+- On iOS (Swift, SwiftUI, Core Data, Core Location): fixed the loss of whole days of records and out-of-memory kills in the background by processing history in bounded windows.
+- Developed an AI model trained on real usage data, and fixed a data leak between training and validation in the identity model that was producing optimistic metrics.
 
 ## WhatsPericialApp
 
-**Certificación de conversaciones de WhatsApp como prueba pericial.** Adquisición asistida de la conversación, integridad de la evidencia y generación del informe pericial. Publicada en iOS y Android.
+**Certifies WhatsApp conversations as forensic evidence.** Assisted acquisition of the conversation, evidence integrity and generation of the expert report. Released on iOS and Android.
 
 [App Store](https://apps.apple.com/es/app/whatspericialapp/id6772326675) · [Google Play](https://play.google.com/store/apps/details?id=com.whatspericial.app)
 
-**Mi trabajo**
-- Port completo de la app iOS a Android (49 ficheros Kotlin), incluida la sesión asistida con LiveKit y Play Integrity.
-- Backend PHP y Node.js: fallos de escala con conversaciones grandes (inserción por lotes, sustitución del motor de generación de PDF), integridad SHA-256 de la evidencia y cadena de custodia.
-- Auditoría de seguridad: endpoints sin autenticación, verificación de firma del webhook de Stripe, credenciales fuera del código, registro de tráfico HTTP eliminado en compilaciones de distribución.
-- Sitio web en React, Vite y Tailwind, y despliegues en el servidor de producción.
+**What I did**
+- Full port of the iOS app to Android (49 Kotlin files), including the real-time assisted session with LiveKit and Play Integrity.
+- Worked on the real-time voice AI agent in Python (LiveKit, OpenAI API) that guides users through the session.
+- PHP and Node.js backend: scaling issues with large conversations (batch inserts, replacing the PDF engine), SHA-256 evidence integrity and chain of custody.
+- Security audit: unauthenticated endpoints, Stripe webhook signature verification, credentials moved out of the code, HTTP traffic logging removed from release builds.
+- Company website in React, Vite and Tailwind, and deployments on the production server.
 
-## Museo interactivo con Leap Motion · código abierto
+## Evidence Vault API · open source
 
-Museo temático de Minecraft en el que el visitante interactúa sin tocar nada: tótems web manejados con las manos mediante un sensor Leap Motion y three.js, y una app Android complementaria con escáner QR, inventario y logros. Proyecto de interacción natural con sensores de gestos.
+REST API to keep files as evidence: every file is registered with its SHA-256 digest and a timestamp, and every action is appended to a hash-chained chain of custody that detects tampering. Python, FastAPI, SQLAlchemy, PostgreSQL, JWT authentication, document summaries with the Claude API, automated tests, Docker and GitHub Actions.
 
-[Código y vídeo](https://github.com/dunkurunku/museo-minecraft)
+[Code](https://github.com/dunkurunku/evidence-vault-api)
 
-## Predicción de biomasa desde una foto · Kaggle · código abierto
+## Pasture biomass from a single photo · Kaggle · open source
 
-Competición CSIRO – Image2Biomass en Kaggle: estimar la biomasa de un pasto a partir de una única imagen cenital, separando la materia viva de la muerta, con solo 357 fotos de entrenamiento. Comparamos cuatro estrategias (DINOv2 con cabezas de regresión, destilación con información privilegiada, ensemble ConvNeXt + EfficientNet y descriptores clásicos) y escribimos la memoria como un artículo científico. Hallazgo clave: validar por fechas destapa una fuga de datos que inflaba el R² de 0,75 a 0,81. Proyecto en grupo para la competición, pensado para poner a prueba nuestros conocimientos y habilidades de Deep Learning sobre un problema real.
+CSIRO – Image2Biomass competition on Kaggle: estimate pasture biomass from a single top-down image, separating live from dead matter, with only 357 training photos. We compared four strategies (DINOv2 with regression heads, distillation with privileged information, a ConvNeXt + EfficientNet ensemble and classical descriptors), detected and fixed data leakage in validation, and wrote the report as a scientific paper. Team project for the competition.
 
-[Código y memoria](https://github.com/dunkurunku/image2biomass-kaggle)
+[Code and report](https://github.com/dunkurunku/image2biomass-kaggle)
 
-## Compilador con Flex y Bison · código abierto
+## Interactive museum with Leap Motion · open source
 
-Compilador completo en C para un pequeño lenguaje imperativo: léxico, sintáctico LALR(1), semántico con tabla de símbolos y ámbitos, cuádruplos y generación de C. Con pruebas automáticas y GitHub Actions. Proyecto individual.
+A Minecraft-themed museum where visitors interact without touching anything: web kiosks controlled by hand through a Leap Motion sensor and three.js, plus a companion Android app with a QR scanner, inventory and achievements. A natural interaction project with gesture sensors.
 
-[Código](https://github.com/dunkurunku/compilador-flex-bison)
+[Code and video](https://github.com/dunkurunku/museo-minecraft)
+
+## Compiler with Flex and Bison · open source
+
+A complete compiler in C for a small imperative language: lexer, LALR(1) parser, semantic analysis with a symbol table and scopes, quadruples and C generation. With automated tests and GitHub Actions. Individual project.
+
+[Code](https://github.com/dunkurunku/compilador-flex-bison)
 
 ---
 
-## Tecnologías
+## Tech stack
 
 | | |
 |---|---|
-| **Lenguajes** | Swift, Kotlin, C++, C, Java, C#, Python, PHP, JavaScript, SQL, Bash, R, Prolog, CLIPS |
-| **iOS** | SwiftUI, Core Data, Core Location, Core Motion, tareas en segundo plano, App Attest, Xcode, App Store Connect, TestFlight |
+| **Languages** | Swift, Kotlin, Python, PHP, JavaScript, Java, C/C++, SQL, Bash |
+| **iOS** | SwiftUI, Core Data, Core Location, Core Motion, background tasks, App Attest, Xcode, App Store Connect, TestFlight |
 | **Android** | Jetpack Compose, Room, Retrofit, Play Integrity, Play Billing, Android Studio, Google Play Console |
-| **Backend** | PHP, Node.js, MySQL, APIs REST, Socket.IO, LiveKit, Stripe y webhooks, Firebase (Analytics, Crashlytics, FCM) |
-| **Sistemas** | Linux, Nginx, TLS, cron, rsync, despliegue y rollback, Git y GitHub |
-| **Web** | React, Vite, Tailwind, HTML y CSS |
-| **Datos e IA** | Análisis de datos en Python, aprendizaje automático, MPI y concurrencia, desarrollo asistido con IA (Claude Code, MCP) |
-| **Seguridad** | Auditoría de backend, integridad SHA-256, cadena de custodia, RGPD |
+| **Backend** | PHP, Node.js, FastAPI, REST APIs, Socket.IO, LiveKit, Stripe and webhooks, Firebase (Analytics, Crashlytics, FCM) |
+| **Data** | PostgreSQL, MySQL, MongoDB |
+| **Systems** | Linux, Nginx, TLS, cron, Docker, Google Cloud, deployments and rollbacks, Git and GitHub Actions |
+| **Web** | React, Vite, Tailwind, HTML and CSS |
+| **AI and data** | LLMs and voice agents (OpenAI API, Claude API), scikit-learn, fastai, PyTorch, CNNs, data mining and analysis in Python |
 
-## Formación
+## Education
 
-**Grado en Ingeniería Informática** · Universidad de Granada · 2022 – 2026
-Mención en Computación y Sistemas Inteligentes. Prácticas de empresa en GeoNotary S.L.
+**Bachelor's degree in Computer Engineering** · University of Granada · 2022 – 2026
+Specialisation in Computing and Intelligent Systems. Internship at GeoNotary S.L.
 
-Español nativo · Inglés B2
+Spanish (native) · English (B2)
